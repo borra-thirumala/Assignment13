@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h2:hover {
+           color: rgb(240, 25, 197);
+      }
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background:linear-gradient(90deg,#f761a1,#8c1bab) fixed;padding:50px
+        }
+
+        .card-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap:15px;
+            margin-top: 50px;
+
+        }
+
+        .card{
+            width:250px;
+            height:auto;
+            position: relative;
+            background-color: wheat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .card > *{
+            padding:10px;
+        }
+
+        .card .card-image{
+            height:150px;
+            width:150px;
+            border:5px solid black;
+            border-radius: 50%;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .card .card-title{
+            padding: 20px 10px;
+            font-size: 1.5;
+            
+        }
+
+        .card:nth-child(1) .card-image{
+            background-image: url(https://thumbs.dreamstime.com/z/web-development-coding-web-development-coding-programming-235007968.jpg);
+        }
+
+        .card:nth-child(2) .card-image{
+            background-image: url(https://img.freepik.com/premium-photo/schezwan-noodles-vegetable-hakka-noodles-chow-mein-is-popular-indo-chinese-recipes-served-bowl-plate-with-wooden-chopsticks_466689-46285.jpg?w=2000);
+        }
+
+        .card:nth-child(3) .card-image{
+            background-image: url(https://tse2.mm.bing.net/th?id=OIP.XMU9lMgsGYdeS5FCEaKD4gHaEK&pid=Api&P=0&h=180);
+        }
+
+        .card:hover{
+            background-color: #f1378a;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <center><h2>FLEXBOX CSS</h2></center>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-image"></div>
+            <div class="card-title">CODING</div>
+            <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quis rerum amet fuga excepturi perferendis quas est iusto quasi laboriosam. Dolor nemo perferendis aspernatur fugiat magnam nihil veritatis sed voluptas.
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image"></div>
+            <div class="card-title">COOKING</div>
+            <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quis rerum amet fuga excepturi perferendis quas est iusto quasi laboriosam. Dolor nemo perferendis aspernatur fugiat magnam nihil veritatis sed voluptas.
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image"></div>
+            <div class="card-title">CYCLING</div>
+            <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quis rerum amet fuga excepturi perferendis quas est iusto quasi laboriosam. Dolor nemo perferendis aspernatur fugiat magnam nihil veritatis sed voluptas.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
